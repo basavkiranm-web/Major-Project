@@ -1,5 +1,6 @@
 # A warning reads in owner words, and "Why this part?" shows the evidence.
-# Aditi's Thar Roxx is the demo's brake-pads case: "Soon", already booked by the agent.
+# Aditi's Thar Roxx is the demo's brake-pads case: "Soon". Whether it is booked depends on
+# whether book-and-cancel has run, so the booking card is not asserted here.
 appId: io.autosaarthi.owner
 name: Home with a warning
 ---
@@ -13,7 +14,6 @@ name: Home with a warning
 - assertVisible: "Soon.*"
 - assertVisible: "Your brake pads are wearing out"
 - assertNotVisible: "P2"
-- assertVisible: "Service booked"
 # The button sits under the cost figures, below the first screen.
 - scrollUntilVisible:
     element: "Why this part?"
