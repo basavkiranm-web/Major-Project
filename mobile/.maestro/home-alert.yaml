@@ -23,4 +23,5 @@ name: Home with a warning
     visible: "Why we think so"
     timeout: 15000
 - back
-- assertVisible: "Thar Roxx"
+# Home keeps its scroll position, so the car's name may be off screen; the warning is not.
+- assertVisible: "Your brake pads are wearing out"
